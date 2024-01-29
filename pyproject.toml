@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pybites-carbon"
+authors = [{name = "Bob Belderbos", email = "bob@pybit.es"}]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "pyperclip==1.8.2",
+    "python-dotenv==0.21.0",
+    "selenium==4.6.1",
+]
+
+[tool.flit.module]
+name = "carbon"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "mypy",
+    "flake8",
+]
+
+[project.urls]
+Documentation = "https://www.youtube.com/watch?v=oxeGhlJQll8"
+Source = "https://github.com/bbelderbos/pybites-carbon"
+
+[project.scripts]
+carbon = "carbon.__main__:main"
