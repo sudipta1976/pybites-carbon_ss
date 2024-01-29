@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "pybites-carbon"
+name = "pybites-carbon_ss"
 authors = [{name = "Bob Belderbos", email = "bob@pybit.es"}]
 readme = "README.md"
 requires-python = ">=3.7"
@@ -27,7 +27,7 @@ test = [
 
 [project.urls]
 Documentation = "https://www.youtube.com/watch?v=oxeGhlJQll8"
-Source = "https://github.com/bbelderbos/pybites-carbon"
+Source = "https://github.com/bbelderbos/pybites-carbon_ss"
 
 [project.scripts]
 carbon = "carbon.__main__:main"
