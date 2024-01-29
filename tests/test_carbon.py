@@ -115,3 +115,5 @@ def test_storing_image_in_different_folder(tmpdir, python_kwargs):
 )
 def test_create_carbon_url(code, kwargs, expected):
     assert _create_carbon_url(code, **kwargs) == expected
+def test_failed():
+    assert 1==2
